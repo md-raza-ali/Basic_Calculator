@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Sofia+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Sofia+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap"); */
 :root {
-  --opr-button-bg: #4fc3f7;
+  --opr-button-bg: #d590f9;
   --button-bg: #f5f5f5;
 }
 * {
@@ -15,11 +15,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   height: 100vh;
-  background-image: url("./assets/bbblurry.svg");
+  width: 100%;
+  background-image: url("./assets/ssscribble.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  /* background-color: #212121; */
+  /* opacity: 0.5; */
 
 }
 .calculator {
@@ -35,6 +39,15 @@ body {
   box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.1);
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(5px);
+  z-index: 99;
+}
+.calculator h1{
+  color: black;
+  font-size: 2.2rem;
+}
+.calculator h1 span{
+  color: var(--opr-button-bg);
+  margin-left: 6px;
 }
 .btn {
   padding: 10px;
@@ -46,6 +59,9 @@ body {
   cursor: pointer;
   border-radius: 4px;
   box-shadow: 1px 1px 8px -6px rgb(29, 30, 34);
+  /* border-radius: 50px; */
+  /* background: #ffffff; */
+  /* box-shadow: 5px 5px 20px #bebebe, -5px -5px 20px #ffffff; */
 }
 .display input {
   margin: 20% 0% 10% 0%;
@@ -57,7 +73,7 @@ body {
   border-radius: 2px;
   border-bottom: 1px solid var(--opr-button-bg);
   background: transparent;
-  color: black;
+  color: white;
 }
 .display input:focus {
   border: 1px solid var(--opr-button-bg);
@@ -66,4 +82,17 @@ body {
 .operator {
   background-color: var(--opr-button-bg);
   color: #ffff;
+}
+.theme{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-right: 12rem;
+  margin-top: 2rem;
+  /* background-color: red; */
+}
+.theme i{
+  color:var(--opr-button-bg);
+  font-size: 30px;
+  cursor: pointer;
 }
