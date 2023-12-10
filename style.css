@@ -69,12 +69,12 @@ body {
   color: white;
 }
 .display input:focus {
-  border: 1px solid var(--opr-button-bg);
   outline: none;
 }
 .operator {
   background-color: var(--opr-button-bg);
   color: #ffff;
+  font-weight: bold;
 }
 .theme {
   display: flex;
@@ -82,7 +82,6 @@ body {
   width: 100%;
   margin-right: 12rem;
   margin-top: 2rem;
-  /* background-color: red; */
 }
 .theme i {
   color: var(--opr-button-bg);
@@ -92,8 +91,31 @@ body {
 .trans {
   transition: 0.6s ease-in-out;
 }
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: red;
+
+/* Media Query  */
+@media only screen and (max-width: 400px) {
+  .calculator {
+    max-width: 280px;
+    margin: 16px auto 20px;
+    padding: 18px;
+  }
+  .btn {
+    padding: 10px;
+    width: 45px;
+    margin-top: 16px;
+    margin: 8px;
+    font-size: 15px;
+  }
+  .calculator h1 {
+    font-size: 1.9rem;
+  }
+  .display input {
+    width: 234px;
+  }
+  .theme {
+    margin-right: 4rem;
+  }
+  .theme i {
+    font-size: 28px;
   }
 }

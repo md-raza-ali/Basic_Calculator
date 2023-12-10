@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Style Sheet  -->
     <link rel="stylesheet" href="style.css" />
     <!-- Font link -->
     <link
@@ -22,9 +23,9 @@
           <input type="text" id="display" />
         </div>
         <div class="row">
-          <button class="btn" onclick="display.value = '' ">AC</button>
+          <button class="btn action" onclick="display.value = '' ">AC</button>
           <button
-            class="btn"
+            class="btn action"
             onclick="display.value = display.value.toString().slice(0,-1)"
           >
             DEL
@@ -57,7 +58,7 @@
           <button
             class="btn operator"
             onclick="display.value
-            = eval(display.value)"
+             = eval(display.value)"
           >
             =
           </button>
@@ -65,6 +66,8 @@
       </div>
     </div>
     <script src="./app.js"></script>
+    
+    <!-- Font Awesome Js  -->
     <script
       src="https://kit.fontawesome.com/a2d322897d.js"
       crossorigin="anonymous"
